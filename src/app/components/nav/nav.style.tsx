@@ -121,7 +121,7 @@ const Container = styled.section`
         height: 100vh;
         width: 100vw;
         top: 0;
-        right: 100vw;
+        right: 110vw;
         z-index: 10;
         transition: all 0.2s ease-in-out;
         display: flex;
@@ -138,8 +138,8 @@ const Container = styled.section`
           flex-direction: column;
           background-color: #fff;
           width: 70vw;
-          right: 0;
-          margin-left: 100vw;
+          right: -10vw;
+          margin-left: 110vw;
           box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
           .logo {
             padding: 40px 25px 20px;

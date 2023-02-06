@@ -172,7 +172,13 @@ const NavComponent = () => {
         >
           <div className="modal ">
             <span className="logo">
-              {/* <img src="https://alikhaled-meem.github.io/psmap_page/assets/images/Logo.svg" alt="" className="img-fluid"> */}
+              <Image
+                src="https://alikhaled-meem.github.io/psmap_page/assets/images/Logo.svg"
+                alt="Picture of the author"
+                width={100}
+                height={100}
+                className="img-fluid"
+              />{" "}
             </span>
             <span className="modal--item active">
               <a

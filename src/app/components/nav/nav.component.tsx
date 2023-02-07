@@ -133,7 +133,9 @@ const NavComponent = () => {
               }}
             >
               <span className="m-2">
-                {t(`nav_lang_${locale.toLowerCase()}`)}
+                {locale.toLowerCase() === "en"
+                  ? t(`nav_lang_ar`)
+                  : t(`nav_lang_en`)}
               </span>
             </a>
             <ul
@@ -172,13 +174,7 @@ const NavComponent = () => {
         >
           <div className="modal ">
             <span className="logo">
-              <Image
-                src="https://alikhaled-meem.github.io/psmap_page/assets/images/Logo.svg"
-                alt="Picture of the author"
-                width={100}
-                height={100}
-                className="img-fluid"
-              />{" "}
+              {/* <img src="https://alikhaled-meem.github.io/psmap_page/assets/images/Logo.svg" alt="" className="img-fluid"> */}
             </span>
             <span className="modal--item active">
               <a

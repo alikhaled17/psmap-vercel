@@ -71,7 +71,7 @@ const Container = styled.section`
     background-color: #fff;
     padding: 40px;
     margin-bottom: 1rem;
-    min-height: 60vh;
+    min-height: 40vh;
     display: flex;
     justify-content: space-between;
     flex-direction: column;

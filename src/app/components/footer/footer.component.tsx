@@ -35,7 +35,7 @@ const FooterComponent = () => {
                   __html:
                     locale === "en"
                       ? "Building a next-generation collaborative<br /> platform to connect Departments and Members."
-                      : "بناء منصة تعاونية من الجيل التالي لربط الإدارات والأعضاء.",
+                      : "بناء منصة تعاونية من لربط الإدارات والأعضاء.",
                 }}
               ></p>
             </div>
@@ -146,7 +146,7 @@ const FooterComponent = () => {
                       alt=""
                       className="img-fluid me-2"
                     />
-                    <a href="mailto:Psmap@info.io">Psmap@info.io</a>
+                    <a href="mailto:Psmap@info.io">Info@Psmap.Io</a>
                   </li>
                   <li className="nav-item cust_nav">
                     <Image

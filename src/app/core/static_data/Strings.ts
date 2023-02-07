@@ -7,11 +7,11 @@ export const LangStrings: any = {
     // Navigation component
     nav_items_home: "Home",
     nav_items_about: "About",
-    nav_items_report: "Report",
+    nav_items_report: "Benefits",
     nav_items_prices: "Prices",
     nav_items_community: "PSMAP Community",
     nav_lang_en: "EN",
-    nav_lang_ar: "AR",
+    nav_lang_ar: "اللغة العربية",
 
     // Hero component
     hero_title: "Next Generation Problem Solving",
@@ -32,32 +32,31 @@ export const LangStrings: any = {
     find_card_desc_3:
       "Since this is the most important skill for the future. We provide the trainees with realistic cases to go through the stages of finding solutions and understanding the stages of the application, as well as verifying their findings with examples from similar organizations.",
     // Use cases component
-    usecases_title: "Use Cases",
+    usecases_title: "Why PSMAP?",
     usecases_desc:
-      "Organizations use PSMAP to investigate the gap between actual and planned performances",
+      "Organizations using PSMAP because it gives a reading of the evolution of the organization",
     usecases_question: "What do we provide?",
     usecases_items: [
-      "Event register",
+      "Register Events",
       "Brainstorming",
       "Timeline",
-      "Management Dashboard",
+      "Dashboard",
       "Recommendations Tracking",
+      "Gamifications",
     ],
     // Dialogue component
-    dialogue_title:
-      "Open Discussion With Mind Mapping, <br /> For Continuous Bloom Of Ideas.",
+    dialogue_title: "Mind Map Dialogues",
     dialogue_desc:
-      "You can invite your team members to join in the discussion and send files. These ideas could be added to the mind map and that would improvise the problem solving procedures in the organization.",
-
+      "You can invite the team to participate in discussions and send files and ideas that appear during the dialogues, where you drag them to the mind map, and this raises the efficiency of problem-solving in the organization and affects you positively",
     // goals component
-    goals_title: "Simple design to focus on the goal",
+    goals_title: "Simplicity to focus on the goal",
     goals_desc:
-      "The process is simple and easy to help you and your team to focus on solving the problem and document it to be easier for review anytime.      ",
+      "The process is simple and easy to help you and your team to focus on solving the problem.",
 
     // report component
-    report_title: "Print the Report To Have It Documented",
+    report_title: "Print RCA Report",
     report_desc:
-      "The advantage of printing the report in the program in order to facilitate the management's knowledge of the work results of solving the problems and follow up on the progress of business improvement.",
+      "The advantage of printing the report in the program in order to facilitate the management's knowledge of the work results of solving the problems.",
 
     // plans component
     plans_title: "Choose your plan",
@@ -117,7 +116,7 @@ export const LangStrings: any = {
           text: "Start Package",
           link: "#",
         },
-        note: "Everything in free edition, plus",
+        note: "Everything in team edition, plus",
         features: [
           "Multiple workspaces",
           "Minimum 15 users",
@@ -131,7 +130,7 @@ export const LangStrings: any = {
     ],
 
     // about component
-    about_title: "Let’s know more about <br /> PSMAP",
+    about_title: "Our monthly meetups ",
     about_desc:
       "Knowledge and skill are the most important thing that every organization requires. We will put you an integrated system to make information and skill be continuous and coherent in your organization",
 
@@ -158,15 +157,15 @@ export const LangStrings: any = {
     // Navigation component Ar
     nav_items_home: "الرئيسية",
     nav_items_about: "عن PSMAP",
-    nav_items_report: "التقرير",
+    nav_items_report: "المميزات",
     nav_items_prices: "الأسعار",
     nav_items_community: " مجتمع PSMAP",
-    nav_lang_en: "اللغة الانجليزية",
+    nav_lang_en: "EN",
     nav_lang_ar: "اللغة العربية",
     // Hero component Ar
     hero_title: "يمنحك الكثير",
     hero_desc:
-      "أولئك الذين يفشلون في التعلم من التاريخ <br />  محكوم عليهم بتكراره",
+      "حل مبتكر وجذرى لتحليل المشكلات <br />  مما يجعل حل المشكلات أقل تعقيدا واكثر كفاءة ",
 
     // Find component Ar
     find_title: "ما تجده هنا",
@@ -183,31 +182,31 @@ export const LangStrings: any = {
       "التدريب العملي على حل المشكلات أهم مهارة في المستقبل مع حالات واقعية و أخذ المتدربين خطوة بخطوة لعمليات الحل والتأكد من فهمهم لهذه المراحل والتحقق من ذلك بتطبيقاتش من أمثلة في نفس المنظمة",
 
     // Use cases component Ar
-    usecases_title: "استخدم حالات",
-    usecases_desc:
-      "تستخدم المنظمات PSMAP للتحقيق في الفجوة بين الأداء الفعلي والمخطط",
+    usecases_title: "؟PSMAP لماذا",
+    usecases_desc: "المنظمات تستخدم PSMAP لأنه يعطى قراءة لسير تطور المنظمه",
     usecases_question: "ماذا نقدم؟",
     usecases_items: [
-      "سجل الحدث",
+      "سجل الاحداث",
       "العصف الذهني",
       "الجدول الزمني",
-      "لوحة تحكم الإدارة",
+      "لوحة التحكم",
       "تتبع التوصيات",
+      "التلاعيب",
     ],
     // Dialogue component
-    dialogue_title: "فتح حوار مع الخريطة الذهنية من أجل استمرار نمو الأفكار",
+    dialogue_title: "حوارات الخريطة الذهنية",
     dialogue_desc:
       "يمكنك دعوة الفريق للمشاركة في المناقشات وإرسال الملفات ، والأفكار التي تظهر أثناء الحوارات التي تقوم بسحبها إلى الخريطة الذهنية ، وهذا لرفع كفاءة حل المشكلات في المنظمة ، مما سيؤثر عليك بشكل إيجابي.",
 
     // goals component Ar
-    goals_title: "البساطة في البرنامج للتركيز على الهدف",
+    goals_title: "البساطة للتركيز على الهدف",
     goals_desc:
-      "عملية البدء بسيطة جدًا لذا فهي تساعدك على التركيز على حل المشكلة أيضًا ، مثل توثيقها حتى تتمكن من مراجعتها من وقت لآخر.",
+      "عملية البدء بسيطة جدا لذا فهى تساعدك على التركيز على حل المشكلة",
 
     // report component
-    report_title: "طباعة التقرير الذي تم إخطاره",
+    report_title: "RCA طباعة تقرير",
     report_desc:
-      "وتتمثل ميزة طباعة التقرير في البرنامج في تسهيل معرفة الإدارة بنتائج العمل لحل المشكلات ومتابعة التقدم في تحسين العمل.",
+      "وتتمثل ميزة طباعة التقرير في البرنامج في تسهيل معرفة الإدارة بنتائج العمل على حل المشكلات.",
     // plans component Ar
     plans_title: "اختر خطتك",
     plans_cards: [
@@ -216,10 +215,10 @@ export const LangStrings: any = {
         desc: "أدواتنا سهلة الاستخدام وستساعدك على إنشاء عمل احترافي وجميل.",
         price: "اشتراك مخصص",
         btn: {
-          text: "بدأ الحزمة",
+          text: "ابدأ الآن",
           link: "#",
         },
-        note: "كل شيء في الإصدار المجاني بالإضافة إلى",
+        note: "كل شيء في الإصدار الفريق بالإضافة إلى",
         features: [
           "مساحات عمل متعددة",
           "15 مستخدمًا على الأقل",
@@ -235,7 +234,7 @@ export const LangStrings: any = {
         desc: "أدواتنا سهلة الاستخدام وستساعدك على إنشاء عمل احترافي وجميل.",
         price: "$2000 <small className='price__per'>المستخدم / السنة</small>",
         btn: {
-          text: "بدأ الحزمة",
+          text: "ابدأ الآن",
           link: "#",
         },
         note: "كل شيء في الإصدار المجاني بالإضافة إلى",
@@ -259,7 +258,7 @@ export const LangStrings: any = {
         desc: "أدواتنا سهلة الاستخدام وستساعدك على إنشاء عمل احترافي وجميل.",
         price: "مجانى",
         btn: {
-          text: "بدأ الحزمة",
+          text: "ابدأ الآن",
           link: "#",
         },
         note: "",
@@ -280,7 +279,7 @@ export const LangStrings: any = {
     ],
 
     // about component Ar
-    about_title: "دعنا نعرف المزيد عن <br /> PSMAP",
+    about_title: "لقاءاتنا الشهرية",
     about_desc:
       "وفرنا محتوى عربي في حل المشاكل لكتابة المقالات و النقاشات وأيضاً لقاءات مسجلة مع تجارب حقيقية في حل المشاكل",
 

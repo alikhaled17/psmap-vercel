@@ -118,10 +118,10 @@ const Container = styled.section`
       &_sidebar {
         background-color: #38383830;
         position: fixed;
-        height: 100vh;
+        height: 110vh;
         width: 100vw;
         top: 0;
-        right: 110vw;
+        right: 100vw;
         z-index: 10;
         transition: all 0.2s ease-in-out;
         display: flex;
@@ -129,7 +129,7 @@ const Container = styled.section`
           justify-content: flex-end;
           left: 0;
           .modal {
-            margin-left: 30vw;
+            margin-left: 40vw;
           }
         }
         .modal {
@@ -138,8 +138,8 @@ const Container = styled.section`
           flex-direction: column;
           background-color: #fff;
           width: 70vw;
-          right: -10vw;
-          margin-left: 110vw;
+          right: 0;
+          margin-left: 100vw;
           box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
           .logo {
             padding: 40px 25px 20px;

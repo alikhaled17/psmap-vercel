@@ -21,7 +21,7 @@ const PlansComponent = () => {
                   className="plans__card--second-title"
                   dangerouslySetInnerHTML={{ __html: c.price }}
                 ></h4>
-                <button className="plans__card--btn">{c.btn.text}</button>
+                <button className="plans__card--btn">{t("global_btn")}</button>
                 <h4 className="plans__card--second-title two">{c.note}</h4>
                 <ul className="plans__card--list">
                   {c.features.map((f: string) => {

@@ -14,6 +14,10 @@ const Container = styled.section`
     box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
     font-family: Cairo;
 
+    .dropdown-item.selected {
+      color: #ff2800;
+      background-color: #fff;
+    }
     &--list {
       display: flex;
       align-items: center;
@@ -31,7 +35,7 @@ const Container = styled.section`
         a.active {
           position: relative;
           color: #ff2800;
-          &::after {
+          &::before {
             content: "";
             border-radius: 4px;
             position: absolute;
@@ -47,7 +51,7 @@ const Container = styled.section`
         a.active {
           position: relative;
           color: #ff2800;
-          &::after {
+          &::before {
             content: "";
             border-radius: 4px;
             position: absolute;
@@ -129,7 +133,7 @@ const Container = styled.section`
           justify-content: flex-end;
           left: 0;
           .modal {
-            margin-left: 40vw;
+            margin-left: 30vw;
           }
         }
         .modal {

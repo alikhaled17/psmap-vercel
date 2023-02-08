@@ -36,13 +36,14 @@ const Container = styled.section`
     display: flex;
     justify-content: flex-start;
     gap: 20px;
+
+    img {
+      min-height: 40px;
+    }
     @media (max-width: 992px) {
       margin-top: 24px;
       gap: 5px;
       justify-content: center;
-      img {
-        max-height: 25px;
-      }
       margin-bottom: 10px;
     }
   }

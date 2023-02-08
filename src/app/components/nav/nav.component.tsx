@@ -10,10 +10,13 @@ const NavComponent = () => {
   const [SectionName, setSectionName] = useState("home");
   const [ActiveSide, setActiveSide] = useState("");
   const [ActiveDropDownMenue, setActiveDropDownMenue] = useState("");
+  const [BenifitsDropDownMenue, setBenifitsDropDownMenue] = useState("");
   const router = useRouter();
 
   const clickNavItem = (secname: string) => {
     setSectionName(secname);
+    setBenifitsDropDownMenue("");
+    setActiveSide("");
   };
 
   const checkSecName = (secname: string) => {
@@ -26,12 +29,13 @@ const NavComponent = () => {
     return "";
   };
 
-  const closeSidebar = () => {
-    setActiveSide("");
+  const closeSidebar = (e: any) => {
+    e.target.classList.contains("nav__section_sidebar") && setActiveSide("");
   };
   const clickDropdownItem = (lang: string) => {
     setLocale(lang);
     setActiveDropDownMenue("");
+    setActiveSide("");
   };
 
   const openSidebar = () => {
@@ -73,16 +77,67 @@ const NavComponent = () => {
               {t("nav_items_about")}
             </a>
           </span>
+
           <span
             className={`nav__section--item ${locale === "ar" ? "rtl" : "ltr"}`}
           >
             <a
-              onClick={() => clickNavItem("report")}
-              className={`nav-link links ${checkSecName("report")}`}
-              href="#report"
+              className={` nav-link ms-0 dropdown-toggle ${checkSecName(
+                "report"
+              )} ${checkSecName("goals")} ${checkSecName("mindmap")}`}
+              id="navbarDropdownMenuBenifits"
+              role="button"
+              data-bs-toggle="dropdown"
+              aria-expanded="false"
+              onClick={(e) => {
+                e.preventDefault();
+                BenifitsDropDownMenue
+                  ? setBenifitsDropDownMenue("")
+                  : setBenifitsDropDownMenue("show");
+              }}
             >
-              {t("nav_items_report")}
+              <span className={`m-2 ${locale === "ar" ? "me-0" : "ms-0"} `}>
+                {t("nav_items_report")}
+              </span>
             </a>
+            <ul
+              className={`dropdown-menu ${BenifitsDropDownMenue}`}
+              aria-labelledby="navbarDropdownMenuBenifits"
+            >
+              <span>
+                <a
+                  className={`dropdown-item ${
+                    SectionName === "mindmap" && "selected"
+                  }`}
+                  onClick={() => clickNavItem("mindmap")}
+                  href="#mindmap"
+                >
+                  <span>{t("nav_items_benifits")[0]}</span>
+                </a>
+              </span>
+              <span>
+                <a
+                  className={`dropdown-item ${
+                    SectionName === "goals" && "selected"
+                  }`}
+                  onClick={() => clickNavItem("goals")}
+                  href="#goals"
+                >
+                  <span>{t("nav_items_benifits")[1]}</span>
+                </a>
+              </span>
+              <span>
+                <a
+                  className={`dropdown-item ${
+                    SectionName === "report" && "selected"
+                  }`}
+                  onClick={() => clickNavItem("report")}
+                  href="#report"
+                >
+                  <span>{t("nav_items_benifits")[2]}</span>
+                </a>
+              </span>
+            </ul>
           </span>
           <span
             className={`nav__section--item ${locale === "ar" ? "rtl" : "ltr"}`}
@@ -144,7 +199,7 @@ const NavComponent = () => {
             >
               <span>
                 <a
-                  className="dropdown-item "
+                  className={`dropdown-item ${locale === "en" && "selected"}`}
                   onClick={() => clickDropdownItem("en")}
                   href="#"
                 >
@@ -153,7 +208,7 @@ const NavComponent = () => {
               </span>
               <span>
                 <a
-                  className="dropdown-item"
+                  className={`dropdown-item ${locale === "ar" && "selected"}`}
                   onClick={() => clickDropdownItem("ar")}
                   href="#"
                 >
@@ -194,15 +249,60 @@ const NavComponent = () => {
                 {t("nav_items_about")}
               </a>
             </span>
-            <span className="modal--item">
+
+            <span className={`modal--item`}>
               <a
-                onClick={() => clickNavItem("report")}
-                className={`nav-link links ${checkSecName("report")}`}
-                href="#report"
+                className={` nav-link ms-0 dropdown-toggle ${checkSecName(
+                  "report"
+                )} ${checkSecName("goals")} ${checkSecName("mindmap")}`}
+                id="navbarDropdownMenuBenifits"
+                role="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+                onClick={(e) => {
+                  e.preventDefault();
+                  BenifitsDropDownMenue
+                    ? setBenifitsDropDownMenue("")
+                    : setBenifitsDropDownMenue("show");
+                }}
               >
-                {t("nav_items_report")}
+                <span className={`m-2 ${locale === "ar" ? "me-0" : "ms-0"} `}>
+                  {t("nav_items_report")}
+                </span>
               </a>
+              {BenifitsDropDownMenue && (
+                <ul className="m-0">
+                  <span>
+                    <a
+                      className="dropdown-item m-2 "
+                      onClick={() => clickNavItem("mindmap")}
+                      href="#mindmap"
+                    >
+                      <span>{t("nav_items_benifits")[0]}</span>
+                    </a>
+                  </span>
+                  <span>
+                    <a
+                      className="dropdown-item m-2"
+                      onClick={() => clickNavItem("goals")}
+                      href="#goals"
+                    >
+                      <span>{t("nav_items_benifits")[1]}</span>
+                    </a>
+                  </span>
+                  <span>
+                    <a
+                      className="dropdown-item m-2"
+                      onClick={() => clickNavItem("report")}
+                      href="#report"
+                    >
+                      <span>{t("nav_items_benifits")[2]}</span>
+                    </a>
+                  </span>
+                </ul>
+              )}
             </span>
+
             <span className="modal--item">
               <a
                 onClick={() => clickNavItem("plans")}

@@ -3,6 +3,12 @@ import React from "react";
 import Container from "./goals.style";
 import useTranslation from "@/app/hooks/useTranslation";
 
+import Simplicity from "@/app/assets/images/goals/Simplicity.svg";
+import Documantations from "@/app/assets/images/goals/Documentation.svg";
+
+import SimplicityAr from "@/app/assets/images/goals/Simplicity (1).svg";
+import DocumantationsAr from "@/app/assets/images/goals/Documentation (1).svg";
+
 const GoalsComponent = () => {
   const { t, locale, setLocale } = useTranslation();
 
@@ -20,18 +26,14 @@ const GoalsComponent = () => {
             <p className="goals_desc ">{t("goals_desc")}</p>
             <div className="goals__icons">
               <Image
-                src="https://alikhaled-meem.github.io/psmap_page/assets/images/goals/Simplicity.svg"
+                src={locale === "ar" ? SimplicityAr : Simplicity}
                 alt="Picture of the author"
-                width={100}
-                height={100}
-                className="img-fluid"
+                height={26}
               />
               <Image
-                src="https://alikhaled-meem.github.io/psmap_page/assets/images/goals/Documentation.svg"
+                src={locale === "ar" ? DocumantationsAr : Documantations}
                 alt="Picture of the author"
-                width={100}
-                height={100}
-                className="img-fluid"
+                height={26}
               />
             </div>
           </div>
